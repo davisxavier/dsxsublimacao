@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5; /* Um cinza claro suave */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+header h1 {
+    color: #DA291C; /* Um vermelho que remete a sublimação, pode ser ajustado */
+    margin-bottom: 5px;
+    font-size: 2.5em; /* Tamanho maior para o título */
+}
+
+header p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Limita a largura para mobile */
+    gap: 15px; /* Espaçamento entre os botões */
+}
+
+.button {
+    display: block; /* Garante que o link ocupe toda a largura */
+    padding: 15px 20px;
+    background-color: #007bff; /* Azul padrão, vamos mudar para cada botão */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px; /* Cantos arredondados */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Efeito de transição suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.highlight-button {
+    background-color: #FFC107; /* Amarelo chamativo */
+    color: #333; /* Texto escuro para contraste */
+    animation: pulse 1.5s infinite; /* Animação sutil para chamar atenção */
+}
+
+.highlight-button:hover {
+    background-color: #E0A800;
+}
+
+/* Animação para o botão de destaque */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255,193,7, 0.7);
+    }
+    70% {
+        transform: scale(1.02);
+        box-shadow: 0 0 0 10px rgba(255,193,7, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255,193,7, 0);
+    }
+}
+
+.whatsapp-button {
+    background-color: #25D366; /* Verde WhatsApp */
+}
+
+.whatsapp-button:hover {
+    background-color: #1DA851;
+}
+
+.instagram-button {
+    background-color: #E1306C; /* Rosa/Roxo Instagram */
+    /* background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); */
+}
+
+.instagram-button:hover {
+    background-color: #C1275C;
+}
+
+.facebook-button {
+background-color: #1877F2; /* Azul padrão do Facebook */
+}
+.facebook-button:hover {
+background-color: #1365E0;
+}
+
+footer {
+    margin-top: auto; /* Empurra o footer para o final da página */
+    padding: 20px;
+    font-size: 0.8em;
+    color: #777;
+    text-align: center;
+}
+
+/* Opcional: Estilo para o botão de portfólio, caso adicione */
+.portfolio-button {
+    background-color: #6c757d; /* Cinza */
+}
+.portfolio-button:hover {
+    background-color: #5a6268;
+}
