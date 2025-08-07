@@ -3,34 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>DSX Sublimação - Seu Link</title>
-    </head>
+    <title>DSX Sublimação - Início</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
 <body>
 
-    <header>
-        <h1><img src="img/logodsxa.png" alt="Logo DSX Sublimação"></h1>
-        <!--<p>Onde suas ideias ganham vida em cores!</p>--> <!--frase comentada porque já se encontra no logo-->
+    <header class="main-header">
+        <a href="index.html" class="logo-link">
+            <img src="img/menulogo.jpg" alt="Logo DSX Sublimação" class="main-logo">
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="nav-button">Início</a></li>
+                <li><a href="#produtos" class="nav-button">Produtos</a></li>
+                <li><a href="#sobre" class="nav-button">Sobre Nós</a></li>
+                <li><a href="#contato" class="nav-button">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section class="links-container">
-            <a href="#" target="_blank" class="button highlight-button">
-            ✨ Confira Nossas Canecas Mágicas! ✨
-            </a>
-            <a href="https://wa.me/5551993473324" target="_blank" class="button whatsapp-button">
-            <img src="img/wts.jpg" alt="" style="vertical-align: middle; margin-right: 5px; height: 20px;"> Orçamento via WhatsApp
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61557091051207" target="_blank" class="button facebook-button">
-            <img src="img/face.jpg" alt="" style="vertical-align: middle; margin-right: 5px; height: 20px;"> Nossa Página no Facebook
-            </a>
-            <a href="https://www.instagram.com/davisnegocios" target="_blank" class="button instagram-button">
-            <img src="img/inst.jpg" alt="" style="vertical-align: middle; margin-right: 5px; height: 20px;"> Ver nosso Instagram
-            </a>
+    <main class="content-container">
+        <section class="hero-section">
+            <h1 class="hero-title">Onde suas ideias ganham vida em cores.</h1>
+            <p class="hero-description">
+                Transforme suas fotos e designs em produtos exclusivos e cheios de personalidade. 
+                Na DSX Sublimação, cada item é feito com paixão e precisão para você se destacar.
+            </p>
+            <a href="#produtos" class="cta-button">Conheça Nossos Produtos</a>
+        </section>
+
+        <!--<section id="produtos" class="featured-products">
+            <h2>Nossos Destaques</h2>
+            <div class="product-gallery">
+                <div class="product-card">
+                    <img src="img/caneca_magica.jpg" alt="Caneca Mágica DSX" class="product-image">
+                    <h3>Caneca Mágica</h3>
+                    <p>A magia acontece quando você adiciona um líquido quente!</p>
+                    <a href="produtos/caneca.html" class="view-product-button">Ver Mais</a>
+                </div>
+                <div class="product-card">
+                    <img src="img/mousepad.jpg" alt="Mousepad personalizado" class="product-image">
+                    <h3>Mousepad Personalizado</h3>
+                    <p>Ideal para dar um toque único ao seu escritório.</p>
+                    <a href="produtos/mousepad.html" class="view-product-button">Ver Mais</a>
+                </div>
+                <div class="product-card">
+                    <img src="img/camiseta.jpg" alt="Camiseta personalizada" class="product-image">
+                    <h3>Camisetas Exclusivas</h3>
+                    <p>Vista a sua ideia com conforto e estilo.</p>
+                    <a href="produtos/camiseta.html" class="view-product-button">Ver Mais</a>
+                </div>
+            </div>
+        </section>-->
+
+        <section id="produtos" class="featured-products">
+            <h2>Nossos Destaques</h2>
+            <div class="product-gallery">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="img/canecadestaque.gif" alt="Caneca personalizada DSX" class="product-image">
+                    </div>
+                    <h3>Canecas Personalizadas</h3>
+                    <p>O presente perfeito para quem você ama, com a sua cara!</p>
+                    <!--<a href="produtos/canecas.html" class="view-product-button">Ver Mais</a>-->
+                    <a href="#" class="view-product-button">Ver Mais</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="img/mousedestaque.gif" alt="Mousepad personalizado DSX" class="product-image">
+                    </div>
+                    <h3>Mousepads com Sua Arte</h3>
+                    <p>Deixe seu espaço de trabalho ou gamer com a sua identidade.</p>
+                    <!--<a href="produtos/mousepads.html" class="view-product-button">Ver Mais</a>-->
+                    <a href="#" class="view-product-button">Ver Mais</a>
+                </div>
+                <!--<div class="product-card">
+                    <div class="product-image-container">
+                        <img src="img/camiseta_personalizada.jpg" alt="Camiseta personalizada DSX" class="product-image">
+                    </div>
+                    <h3>Camisetas com Estilo</h3>
+                    <p>Conforto e qualidade para você usar suas ideias.</p>
+                    <a href="produtos/camisetas.html" class="view-product-button">Ver Mais</a>
+                </div>-->
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="img/diversosdestaques.gif" alt="Placa de MDF Torre de Xícaras" class="product-image">
+                    </div>
+                    <h3>Itens Especiais</h3>
+                    <p>Transforme seu ambiente com produtos únicos e cheios de personalidade.</p>
+                    <!--<a href="produtos/diversos.html" class="view-product-button">Ver Mais</a>-->
+                    <a href="#" class="view-product-button">Ver Mais</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="sobre" class="about-section">
+            <div class="about-content">
+                <h2>Nossa História</h2>
+                <p>
+                    A DSX Sublimação nasceu da paixão por transformar e criar. Começou em um quarto de 
+                    apartamento que se tornou o nosso "Espaço DSX", um lugar onde a tecnologia 
+                    e a criatividade se encontram para dar vida às suas ideias. Minha formação em 
+                    sublimação e minha experiência em informática garantem que cada produto seja 
+                    único, feito com a mais alta qualidade e atenção aos detalhes.
+                </p>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer id="contato" class="main-footer">
+        <p>Entre em contato para um orçamento:</p>
+        <div class="social-links">
+            <a href="https://wa.me/5551993473324" target="_blank">
+                <img src="img/wts.jpg" alt="WhatsApp" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61557091051207" target="_blank">
+                <img src="img/face.jpg" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/davisnegocios" target="_blank">
+                <img src="img/inst.jpg" alt="Instagram" class="social-icon">
+            </a>
+        </div>
         <p>&copy; 2025 DSX Sublimação. Todos os direitos reservados.</p>
     </footer>
 

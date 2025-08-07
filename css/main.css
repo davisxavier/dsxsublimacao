@@ -1,0 +1,260 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5; /* Fundo cinza claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+.content-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+/* Cabeçalho */
+.main-header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-logo {
+    padding-left: 10em;
+    height: 80px; /* Ajuste o tamanho do seu logo aqui */
+}
+
+/* Menu de Navegação em Estilo de Botão */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #b9921c; /* Cor dourada, baseada no seu logo */
+    color: #000; /* Texto preto */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #E0A800; /* Dourado mais escuro ao passar o mouse */
+}
+
+/* Seção de Boas-Vindas (Hero) */
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    background-image: url('../img/backindex.png');
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: center right;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-description {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #555;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #DA291C; /* Cor vermelha para contraste, da sua bio.html */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #B82316;
+}
+
+/* Seção de Produtos em Destaque */
+.featured-products {
+    padding: 40px 0;
+}
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-image-container {
+    /* Cria um quadrado com a proporção 1:1 */
+    width: 100%;
+    padding-bottom: 100%; /* Isso faz com que a altura seja igual à largura */
+    position: relative; /* Essencial para a imagem dentro dele */
+    overflow: hidden; /* Esconde o que excede o container */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.product-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 15px 0 5px;
+}
+
+.product-card p {
+    color: #777;
+    padding: 0 15px;
+}
+
+.view-product-button {
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.view-product-button:hover {
+    background-color: #555;
+}
+/* Seção de Produtos em Destaque 
+.featured-products {
+    padding: 40px 0;
+}
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 15px 0 5px;
+}
+
+.product-card p {
+    color: #777;
+    padding: 0 15px;
+}
+
+.view-product-button {
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.view-product-button:hover {
+    background-color: #555;
+}
+*/
+/* Seção "Sobre Nós" */
+.about-section {
+    padding: 40px 0;
+}
+
+.about-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h2 {
+    margin-top: 0;
+}
+
+/* Rodapé */
+.main-footer {
+    background-color: #333;
+    color: #f0f2f5;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.social-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    height: 30px; /* Tamanho dos ícones de redes sociais */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.main-footer p {
+    margin: 0;
+}
