@@ -309,7 +309,7 @@ h1, h2, h3 {
         display: block;
         height: 50px; /* Altura da imagem igual à do botão */
         width: auto;
-        margin: 20px auto 0 0; /* Alinha à esquerda e adiciona margem superior */
+        margin: 20px 0 0 auto; /* Alinha à direita e adiciona margem superior */
     }
 
     /* Ajustes na galeria de produtos */
