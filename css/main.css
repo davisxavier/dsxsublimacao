@@ -259,37 +259,41 @@ h1, h2, h3 {
     margin: 0;
 }
 
+/* Esconde o logo do herói em telas grandes */
+.mobile-logo-hero {
+    display: none;
+}
+
 /* ====================================
    Responsividade para Telas Menores
    ==================================== */
 @media (max-width: 768px) {
     /* Ajustes no cabeçalho */
     .main-header {
-        flex-direction: column; /* Coloca os itens em coluna */
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
     .main-logo {
-        padding-left: 0; /* Remove o padding do logo */
-        margin-bottom: 10px; /* Adiciona um espaço abaixo do logo */
+        padding-left: 0;
+        margin-bottom: 10px;
     }
 
     .main-nav ul {
-        flex-direction: column; /* Coloca os botões de navegação em coluna */
+        flex-direction: column;
         gap: 10px;
         width: 100%;
     }
 
     .nav-button {
-        width: 100%; /* Faz os botões ocuparem a largura total */
+        width: 100%;
     }
 
     /* Ajustes na seção Hero */
     .hero-section {
         padding: 40px 10px;
-        background-position: center bottom; /* Move a imagem de fundo */
-        background-size: 40%;
+        background-image: none; /* Remove a imagem de fundo aqui */
     }
 
     .hero-title {
@@ -300,9 +304,17 @@ h1, h2, h3 {
         font-size: 1em;
     }
 
+    /* Exibe e estiliza o logo do herói para telas pequenas */
+    .mobile-logo-hero {
+        display: block;
+        height: 50px; /* Altura da imagem igual à do botão */
+        width: auto;
+        margin: 20px auto 0 0; /* Alinha à esquerda e adiciona margem superior */
+    }
+
     /* Ajustes na galeria de produtos */
     .product-gallery {
-        grid-template-columns: 1fr; /* Exibe um card por linha */
+        grid-template-columns: 1fr;
     }
 
     /* Ajustes no rodapé */
