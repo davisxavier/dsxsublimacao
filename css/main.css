@@ -258,3 +258,55 @@ h1, h2, h3 {
 .main-footer p {
     margin: 0;
 }
+
+/* ====================================
+   Responsividade para Telas Menores
+   ==================================== */
+@media (max-width: 768px) {
+    /* Ajustes no cabeçalho */
+    .main-header {
+        flex-direction: column; /* Coloca os itens em coluna */
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-logo {
+        padding-left: 0; /* Remove o padding do logo */
+        margin-bottom: 10px; /* Adiciona um espaço abaixo do logo */
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Coloca os botões de navegação em coluna */
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-button {
+        width: 100%; /* Faz os botões ocuparem a largura total */
+    }
+
+    /* Ajustes na seção Hero */
+    .hero-section {
+        padding: 40px 10px;
+        background-position: center bottom; /* Move a imagem de fundo */
+        background-size: 40%;
+    }
+
+    .hero-title {
+        font-size: 1.8em;
+    }
+
+    .hero-description {
+        font-size: 1em;
+    }
+
+    /* Ajustes na galeria de produtos */
+    .product-gallery {
+        grid-template-columns: 1fr; /* Exibe um card por linha */
+    }
+
+    /* Ajustes no rodapé */
+    .social-links {
+        flex-direction: column;
+    }
+}
