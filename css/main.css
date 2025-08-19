@@ -99,6 +99,26 @@ h1, h2, h3 {
 .cta-button:hover {
     background-color: #B82316;
 }
+/*estilo para o novo botão*/
+
+.quote-nav-button {
+    background-color: #DA291C; /* O mesmo vermelho da sua bio.html */
+    color: #fff;
+}
+
+.quote-nav-button:hover {
+    background-color: #B82316;
+}
+
+/* Estilo para o novo botão de orçamento na tela principal */
+.quote-cta-button {
+    background-color: #008000; /* Um verde chamativo para o WhatsApp */
+    margin-left: 10px; /* Adiciona um espaço entre os botões */
+}
+
+.quote-cta-button:hover {
+    background-color: #006400;
+}
 
 /* Seção de Produtos em Destaque */
 .featured-products {
@@ -320,5 +340,10 @@ h1, h2, h3 {
     /* Ajustes no rodapé */
     .social-links {
         flex-direction: column;
+    }
+    /* estilo para o novo botão*/
+    .cta-button {
+        display: block;
+        margin: 10px 0; /* Espaçamento entre os botões em telas pequenas */
     }
 }
