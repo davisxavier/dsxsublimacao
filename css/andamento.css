@@ -1,0 +1,194 @@
+/* Estilos para a página de Acompanhamento de Pedido */
+
+/* Paleta de Cores da DSX (usadas no seu main.css) */
+:root {
+    --fundo-claro: #f0f2f5;
+    --texto-escuro: #333;
+    --vermelho-dsx: #DA291C;
+    --verde-pago: #25D366;
+    --amarelo-andamento: #FFC107;
+    --cinza-pendente: #999;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--fundo-claro);
+    color: var(--texto-escuro);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: var(--vermelho-dsx);
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pedido-status {
+    margin-bottom: 20px;
+}
+
+.pedido-status h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.status-etapa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.status-etapa:last-child {
+    border-bottom: none;
+}
+
+.etapa-titulo {
+    font-weight: bold;
+}
+
+/* Estilos para as datas */
+.data_orc, .data_aprov {
+    font-size: 0.9em;
+    color: var(--cinza-pendente);
+}
+
+/* Estilos para os status coloridos */
+.status {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.pago {
+    color: #fff;
+    background-color: var(--verde-pago);
+}
+
+.em-andamento {
+    color: var(--texto-escuro);
+    background-color: var(--amarelo-andamento);
+}
+
+.pendente {
+    color: #fff;
+    background-color: var(--cinza-pendente);
+}
+
+/* Seção de Prazo de Aprovação */
+.prazo-aprovacao {
+    text-align: center;
+    background-color: #ffeeba;
+    border: 1px solid #ffc107;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Botão do WhatsApp */
+.botao-whatsapp {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--verde-pago);
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.botao-whatsapp:hover {
+    background-color: #1DA851;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #777;
+    font-size: 0.8em;
+}
+/* Media Queries para Responsividade */
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header {
+        margin-bottom: 15px;
+    }
+
+    header img.logo-header {
+        max-width: 80px; /* Ajuste o tamanho conforme necessário */
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .pedido-status h2 {
+        font-size: 1.3em;
+    }
+
+    .status-etapa {
+        padding: 10px;
+        font-size: 0.95em;
+    }
+
+    .prazo-aprovacao {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .botao-whatsapp {
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    footer {
+        margin-top: 30px;
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width: 576px) {
+    header img.logo-header {
+        max-width: 60px; /* Ajuste ainda menor se precisar */
+        margin-bottom: 8px;
+    }
+
+    .status-etapa {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .status-etapa span:last-child {
+        margin-top: 5px;
+    }
+}
